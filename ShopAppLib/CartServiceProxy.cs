@@ -45,7 +45,7 @@ namespace ShopAppLib
         {
             get { return carts; }
         }
-        // test
+
         public void AddNewCart()
         {
             carts.Add(new ShoppingCart
