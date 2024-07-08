@@ -71,11 +71,11 @@ namespace ShopAppLib
 
             if (existingItem != null)
             {
-                existingItem.Stock++;
+                if (existingItem.IsBogo == i.IsBogo)
+                    existingItem.Stock++;
                 existingItem.Name = i.Name;
                 existingItem.Description = i.Description;
                 existingItem.Id = i.Id;
-
                 existingItem.Price = i.Price;
                 existingItem.IsBogo = i.IsBogo;
                 existingItem.IsMarkedDown = i.IsMarkedDown;
